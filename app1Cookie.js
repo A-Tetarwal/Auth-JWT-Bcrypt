@@ -15,6 +15,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/read', (req, res) => { // req -> request, res -> response
+    // yahan pe cookies ko hum check bhi kar sakte hain
     console.log(req.cookies);
     res.send('read page');
 })
